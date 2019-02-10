@@ -6,7 +6,21 @@
 3. Update bash profile; `export GOOGLE_APPLICATION_CREDENTIALS=/Users/credentials/file-name.json`
 4. Now `./gradlew publish` works.  (make sure gradle daemon is restarted)
 
-# Using the library
+# Updating the library
 
 * Each commit will update artifact version using `git describe`
 * This integrates well with GitHub releases with `v0.0.1` style tags.
+
+# Depending on this library
+
+1. Use the `GOOGLE_APPLICATION_CREDENTIALS` environment variable with GCS credentials
+2. Then you can add `compile 'github.chickenbane:rapidash-spring-boot-starter:v0.0.2'` to the Gradle `dependencies { }` 
+3. Add the following block to build.gradle:
+```groovy
+repositories {
+    maven {
+        name = 'gcsRepo'
+        url = "gcs://github-cb-repo/maven2"
+    }
+}
+```
