@@ -1,1 +1,3 @@
 rootProject.name = 'rapidash-spring-boot-starter'
+
+enableFeaturePreview('STABLE_PUBLISHING')
