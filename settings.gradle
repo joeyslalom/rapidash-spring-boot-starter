@@ -1,3 +1,4 @@
 rootProject.name = 'rapidash-spring-boot-starter'
 
-enableFeaturePreview('STABLE_PUBLISHING')
+// Disabled for GCP cloud builder
+// enableFeaturePreview('STABLE_PUBLISHING')
