@@ -1,3 +1,4 @@
 rootProject.name = 'rapidash-spring-boot-starter'
 
-enableFeaturePreview('STABLE_PUBLISHING')
+//google cloud builder using older version of gradle
+//enableFeaturePreview('STABLE_PUBLISHING')
