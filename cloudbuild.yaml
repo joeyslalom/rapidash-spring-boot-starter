@@ -1,3 +1,5 @@
 steps:
+  - name: 'gcr.io/cloud-builders/git'
+    args: ['fetch', '--unshallow']
   - name: 'openjdk:8-jdk-alpine'
     args: ['./gradlew', 'publish']
