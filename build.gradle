@@ -57,7 +57,7 @@ publishing {
 	repositories {
 		maven {
 			name = 'gcsRepo'
-			url = "gcs://github-cb-repo/maven2"
+			url = "gcs://joeyslalom-maven2"
 		}
 	}
 }
